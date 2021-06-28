@@ -1,14 +1,14 @@
-class Node():
+class Node:
     def __init__(self, data):
         self.data = data
         self.right = None
         self.left = None
 
-class BST():
+class BST:
     def __init__(self):
         self.root = None
 
-    def append(self, data):
+    def insert(self, data):
         newNode = Node(data)
         if self.root is None:
             self.root = newNode
