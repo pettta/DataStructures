@@ -55,3 +55,13 @@ class Linkedlist:
             counter += 1
             current = current.next
         return counter
+    
+    def retReverseLL(self):
+        prev = None
+        curr = self.head
+        while curr is not None:
+            nextT = curr.next
+            curr.next = prev
+            prev = curr
+            curr = nextT
+        return prev
